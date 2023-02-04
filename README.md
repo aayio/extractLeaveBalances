@@ -1,2 +1,3 @@
-# extractLeaveBalances
-Extract leave balances from WA Health PDF payslips.
+# extractLeaveBalances.py
+
+(README is a work in progress)
