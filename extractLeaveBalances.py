@@ -125,6 +125,10 @@ for payslipPathObject in Path.cwd().glob('*.pdf'):
             leaveBalanceCell.value = extractedData[heading]
             leaveBalanceCell.data_type = 'n'
     
+    # Close the file
+
+    payslipObject.close()
+
     # Increase rowToWrite
 
     rowToWrite += 1
@@ -132,5 +136,3 @@ for payslipPathObject in Path.cwd().glob('*.pdf'):
 # Save the spreadsheet
 
 leaveBalancesSpreadsheet.save('output.xlsx')
-
-# payslipObject.close()
